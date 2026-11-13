@@ -1,0 +1,182 @@
+
+@font-face {
+  font-family: "DIN 1451 Alt Mittelschrift";
+  src: url("fonts/DIN1451-Alt-Mittelschrift.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gidole";
+  src: url("fonts/gidole.regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 72;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "DIN 1451 Alt Mittelschrift","Gidole";
+  background-color: #f7f2ee;
+  color: #000000;
+  padding: 2rem;
+  text-align: center;
+}
+
+body.home {
+  align-items: flex-start;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+p.subtitle {
+  font-size: 1.1rem;
+  color: #5c5c5c;
+  margin: 0 0 2.5rem 0;
+}
+
+nav.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+nav.buttons a {
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0;
+  font-size: 0.95rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+nav.buttons a:hover {
+  background-color: #000000;
+  color: #f7f2ee;
+}
+
+main {
+  max-width: 600px;
+  width: 100%;
+}
+
+a.back {
+  display: inline-block;
+  margin-top: 2.5rem;
+  color: #666;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+a.back:hover {
+  color: #000000;
+}
+
+footer.footnote {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+main.cv {
+  max-width: 750px;
+}
+
+main.cv h1 {
+  margin-bottom: 0.3rem;
+}
+
+main.cv .subtitle {
+  margin-bottom: 0.8rem;
+}
+
+.cv-contact {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  margin: 0 0 2rem 0;
+}
+
+.cv-contact a {
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.cv-contact a:hover {
+  border-bottom-color: #1a1a1a;
+}
+
+main.cv h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 0.3rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.cv-entry {
+  margin-bottom: 1.2rem;
+}
+
+.cv-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-weight: 600;
+}
+
+.cv-role {
+  font-size: 1rem;
+}
+
+.cv-date {
+  font-size: 0.9rem;
+  color: #5c5c5c;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.cv-sub {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.cv-bullets {
+  margin: 0.3rem 0 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.cv-bullets li {
+  margin-bottom: 0.2rem;
+}
+
+.cv-link {
+  color: inherit;
+  text-decoration: underline;
+}
