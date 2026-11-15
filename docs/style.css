@@ -8,6 +8,14 @@
 }
 
 @font-face {
+  font-family: "DIN 1451 Alt Mittelschrift breve";
+  src: url("fonts/AlteDIN1451Mittelschrift_breve.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Gidole";
   src: url("fonts/gidole.regular.ttf") format("truetype");
   font-style: normal;
@@ -26,7 +34,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "DIN 1451 Alt Mittelschrift","Gidole";
+  font-family: "DIN 1451 Alt Mittelschrift breve";
   background-color: #f7f2ee;
   color: #000000;
   padding: 2rem;
